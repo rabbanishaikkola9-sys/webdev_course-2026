@@ -1,1 +1,1 @@
-alert("Welcome to the image list and tables")
+// alert("Welcome to the image list and tables")
