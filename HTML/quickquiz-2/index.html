@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidoes & audios | HTML</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: aliceblue;
+
+    }
+
+    h1 {
+        background-color: cyan;
+        color: black;
+        text-decoration: underline solid blue;
+    }
+</style>
+
+<body>
+    <h1 style="text-align: center;">Videos</h1>
+    <span>
+        <video src="video.mp4" controls loop muted height="555"></video>
+    </span>
+    <span>
+        <video src="boat.mp4" controls loop muted height="555"></video>
+    </span>
+    <span>
+        <video src="ocean.mp4" controls loop muted height="555" width="555"></video>
+    </span>
+    <span>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fhoDRB53DwY?si=RejmgbE8FuhxbTlP&amp;start=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </span>
+    <span>
+        <iframe width="560" height="315"
+            src="https://www.youtube-nocookie.com/embed/1dkfuga2_Ps?si=xdQ0WOafaaBFuRoQ&amp;start=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </span>
+    <h1 style="text-align: center;">Audios</h1>
+    <span>
+        <audio src="audio1.mp3" controls loop autoplay muted></audio>
+    </span>
+    <span>
+        <audio src="audio2.mp3" controls loop autoplay muted></audio>
+    </span>
+    <span>
+        <audio src="audio3.mp3" controls loop autoplay muted></audio>
+    </span>
+</body>
+
+</html>
