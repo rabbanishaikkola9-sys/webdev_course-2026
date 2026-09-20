@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors |CSS</title>
+    <style>
+        /* Universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Element selector */
+        div{
+            /* background-color: red; */
+            /* color: white; */
+        }
+        /* Class selector */
+        .red{
+            background-color: red;
+        }
+        /* ID selector */
+        #green{
+            background-color: green;
+        }
+        /* Child selector immediate or direct child applied */
+        div >p{
+            background-color: blue;
+            color: yellow;
+        }
+        /* Descendant selector */
+        div p{
+            background-color: blue;
+            color: white;
+        }
+        /* Pseudo selector */
+        a:visited{
+            color: rgb(208, 208, 61);
+        }
+        a:link{
+            color: black;
+        }
+        a:active{
+            background-color:maroon;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>Hey I am one</p>
+        <p>Hey I am two</p>
+    </main>
+    <div class="red">
+        Hey I am div
+    </div>
+    <div id="green">
+        hey I am another div
+    </div>
+    <div>
+        <article>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam dolores dicta.</p>
+        </article>
+    </div>
+    <a href="https://google.com">Open Google</a> 
+    <br>
+    <a href="https://Quora.com">Open Quora</a> 
+    <br>
+    <a href="https://github.com">Open github</a>
+</body>
+</html>
