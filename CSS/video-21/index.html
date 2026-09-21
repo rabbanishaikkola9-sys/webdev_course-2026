@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade | CSS</title>
+    <style>
+        /* The specificity of this is 1 */
+          p{
+            background-color: red !important; /*For important the specificity of this is 10000*/
+            color: white;
+        }
+        /* The specificity of this is 1 */
+
+        p{
+            background-color: blue;
+            color: white;
+        }
+        /* The specificity of this is 1 */
+        h1{
+            background-color: aqua;
+        }
+        /* The specificity of this is 11 */
+        h1.yellow{
+            background-color: yellow;
+            color: white;
+        }
+        /* The specificity of this is 10 */
+        .cred{
+            background-color: red;
+            color: white;
+        }
+        /* The specificity of this is 10 */
+        .cpr{
+            background-color: purple;
+            color: white;
+        }
+        /* The specificity of this is 10 */
+        [data-x=a]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpr" data-x="a">
+            CSS specificity
+        </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse sint sit vero?</p>
+    </div>
+</body>
+</html>
